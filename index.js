@@ -44,3 +44,26 @@ const noteList = document.getElementById("note-list");
         }
 
         displayNotes();
+
+
+      //Функция добавления кнопки редактирования
+        function displayNotes() {
+          noteList.innerHTML = "";
+          savedNotes.forEach((note, index) => {
+              const noteElement = document.createElement("div");
+              noteElement.innerHTML = `<p>${note.text}</p><small>${note.date}</small>`;
+              noteElement.innerHTML += `<button onclick="editNote(${index})">Редактировать</button>`;
+              noteElement.innerHTML += `<button onclick="deleteNote(${index})">Удалить</button>`;
+              noteList.appendChild(noteElement);
+          });
+      }
+
+      //Функция редактирования
+      function editNote(index) {
+        const editedNote = prompt("Отредактируйте заметку:", savedNotes[index].text);
+        if (editedNote !== null) {
+            savedNotes[index].text = editedNote;
+            localStorage.setItem("notes", JSON.stringify(savedNotes));
+            displayNotes();
+        }
+    }
