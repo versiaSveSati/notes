@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    color: orange;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Выберите подходящий шрифт */
+    font-size: 16px; /* Размер текста */
+    text-align: center;
+    transition: 0.3s; /* Плавное изменение стилей при наведении */
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
+
+#note-list {
+    text-align: left;
+}
