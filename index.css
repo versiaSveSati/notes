@@ -52,7 +52,7 @@ button:hover {
 
 /* Стили для мобильного телефона */
 
-@media (max-width: 350px) {
+@media (max-width: 250px) {
     body {
         font-size: 16px; /* Уменьшите размер шрифта для мобильного телефона */
     }
