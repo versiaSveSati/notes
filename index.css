@@ -85,16 +85,21 @@ button:hover {
 
 @media screen and (max-width: 325px) {
     body {
-        font-size: 10px;
-        max-width: 1px;
+        font-size: 5px;
+        
         /* Уменьшите размер шрифта для мобильного телефона */
     }
 
     .container {
         padding: 10px;
         /* Уменьшите внутренние отступы для мобильного телефона */
+        max-width: 100px;
     }
 
+    #note-text {
+        font-size: 5px;
+    }
+    
     button {
         font-size: 10px;
         /* Уменьшите размер текста кнопок для мобильного телефона */
