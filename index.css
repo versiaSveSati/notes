@@ -86,7 +86,7 @@ button:hover {
 @media screen and (max-width: 325px) {
     body {
         font-size: 10px;
-        max-width: 150px;
+        max-width: 1px;
         /* Уменьшите размер шрифта для мобильного телефона */
     }
 
